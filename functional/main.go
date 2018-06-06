@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"imooc.com/ccmouse/learngo/functional/fib"
+	"imooc-demo/functional/fib"
 )
 
 type intGen func() int

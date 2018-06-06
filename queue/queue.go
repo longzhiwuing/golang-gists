@@ -1,7 +1,7 @@
 package queue
 
 // A FIFO queue.
-type Queue []int
+type Queue [] interface{}
 
 // Pushes the element into the queue.
 // 		e.g. q.Push(123)
@@ -13,7 +13,7 @@ func (q *Queue) Push(v int) {
 func (q *Queue) Pop() int {
 	head := (*q)[0]
 	*q = (*q)[1:]
-	return head
+	return head.(int)
 }
 
 // Returns if the queue is empty or not.

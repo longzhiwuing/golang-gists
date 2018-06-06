@@ -6,7 +6,7 @@ import (
 
 	"bufio"
 
-	"imooc.com/ccmouse/learngo/functional/fib"
+	"imooc-demo/functional/fib"
 )
 
 func tryDefer() {
