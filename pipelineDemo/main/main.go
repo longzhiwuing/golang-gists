@@ -10,8 +10,8 @@ import (
 func main() {
 	//mergeDemo()
 
-	const filename  = "large.in"
-	const n = 100000000
+	const filename  = "small.in"
+	const n = 64
 
 	file, err := os.Create(filename)
 
@@ -33,7 +33,7 @@ func main() {
 
 	defer file.Close()
 
-	p = pipeline.ReaderSource(bufio.NewReader(file))
+	p = pipeline.ReaderSource(bufio.NewReader(file),-1)
 
 	count:=0
 	for v := range p {
